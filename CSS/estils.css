@@ -1,0 +1,743 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+  	font-family: "Overpass", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+		overflow-x: hidden;
+}
+
+
+/* 0. MENU */
+
+header {
+    width: 100vw;
+    height: auto;
+    background-color: #DE952A;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+
+#logotip {
+    width: 80%;
+}
+
+#logotip img {
+    width: 55%;
+    height: auto;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+#entradas
+{
+	/*background-color: darkred;*/
+	width: 35%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.casilla
+{
+	display: inline-block;
+	
+}
+
+#boton
+{
+	display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white;
+    border: solid 2px white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+
+#boton:hover
+{
+	background-color: black;
+}
+
+
+
+#boton img {
+    width: 30px; 
+    margin-right: 10px; 
+}
+
+#menu {
+    width: auto;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 4vh;
+}
+
+.linksmenu {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.linksmenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 16px;
+    padding: 4vh;
+}
+
+#cambiocolor {
+    color:  #F21905;
+}
+
+.linksmenu a:hover {
+    color: #000000;
+    text-decoration-thickness: 6px;
+}
+
+/*1. HERO*/
+#hero {
+    /* position: absolute; */
+    width: 100vw;
+    height: 100vh;
+    background-color: cyan;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanimacion {
+    z-index: 3;
+    position: absolute;
+    /* width: auto; */
+    top: 50%;
+    left: 620px;
+}
+
+.contanimacion > img {
+    width: 80%;
+    opacity: 0;
+    animation: fadeIn 10s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+video {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/*2. SOBRE AQUEST FESTIVAL*/
+
+#about {
+	width: 100vw;
+	height: auto;
+	padding:10%;
+	padding: 5% 10% 5% 10%;
+	display:flex;
+	flex-direction:row;
+	background-color: #000;
+}
+
+h2 {
+	font-size: 5vw;
+	text-align: center;
+	font-weight: bolder;
+	color: #DE952A;
+}
+
+.sobreaquestfestival {
+	width: 	50%;
+	padding-right:2%;
+}
+
+.benvingutsalfestival {
+	width: 	50%;
+	display: flex;
+	align-items: center;
+	padding-left:2%;
+	color: #fff;
+	font-weight: normal;
+}
+
+/*3. FOOTER*/
+
+footer {
+	width: 100vw;
+	height: auto;
+  background-color: #F21905;
+  color: #fff;
+  padding: 2% 10% 2% 10%;
+ font-family: "Overpass", sans-serif;
+
+
+}
+
+.footer-section2 
+{
+	display: flex;
+  justify-content: center;
+/*  background-color: grey;*/
+padding-left: 10px;
+width: auto;
+}
+
+.footer-section2 img
+{
+	width: 80%;
+	height: auto;
+}
+
+
+
+.footer-caixa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+/*  background-color: black;*/
+}
+
+.footer-section {
+  width: 25%;
+  padding:4%;
+/*  background-color: blueviolet;*/
+}
+
+.footer-section h2 {
+  color: #fff;
+  margin-top:10%;
+  font-size: 2rem;
+  text-align: unset;
+  padding-bottom: 10px;
+/*  background-color: blue;*/
+}
+
+.footer-section ul {
+  list-style: none;
+  font-weight: bold;
+  padding: 0;
+}
+
+.footer-section p {
+  font-weight: normal ;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.footer-section h3 {
+  
+  padding-top: 10px;
+}
+
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+
+
+.grup2 {
+	/*background-color: green;*/
+	width: auto;
+	display: flex;
+  list-style: none;
+}
+
+.caja {
+	width: auto;
+	height: auto;
+/*	background-color: brown;*/
+	display: flex;
+/*	border: solid;*/
+	justify-content: center;
+	height: auto;
+/*	padding-bottom:2%;*/
+}
+
+.caja >a{
+	width: auto;
+	height: auto;
+/*	background-color: skyblue;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+/*	padding-bottom:2%;*/
+}
+
+a> img
+{
+	width: 60%;
+	height: auto;
+}
+
+
+/*4. GRUPS.HTML*/
+
+.Titulo2 {
+	width: 	100%;
+	padding:2% 2% 5% 5%;
+text-align: unset;
+font-weight: bold;
+	padding-right:2%;
+}
+
+
+#grups {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	flex-direction: row;
+	padding:5% 10% 5% 10%;
+
+}
+
+.grup {
+	width: calc(48% - 20px);
+	height: auto;
+	background-color: #DE952A;
+ 	margin: 3% 0%;
+	overflow: hidden;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.grup> h2 {
+	color: #000;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: unset;
+	padding:5% 5% 2% 5%;
+
+}
+
+.grup> p {
+	padding:5% 2% 8% 5%;
+	font-size: 1.3rem;
+}
+
+
+
+.boton2{
+width: 100%;
+height: auto;
+background-color: #F21905;
+display: flex;
+justify-content: center;
+padding:5% 5% 5% 3%;
+clear: both;	
+text-decoration: unset;
+font-size: 1.3rem;
+font-weight: bold;
+color:#FFFFFF ;
+}
+
+.boton2:hover
+{
+background-color: #fff;
+color: #000;
+}
+
+
+.grup> img {
+	width: 100%;
+}
+
+/*5. CONTACT.HTML*/
+
+.contacte {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	flex-direction: row;
+	padding:5% 10% 5% 10%;
+}
+
+.formulari {
+	width: 50%;
+	height: auto;
+	padding: 2%;
+/*	background-color: #DE952A;*/
+}
+
+.Titulo3 {
+	font-size: 3vw;
+	text-align: unset;
+	font-weight: bolder;
+	color: #fff;
+}
+
+
+label{
+	font-size: 1.5rem;
+/*	background-color: red;*/
+	color: #fff;
+margin:10px 0px;
+list-style: none;
+
+}
+
+input{
+	width: 500px;
+	height: 30px;
+margin:10px 0px;}
+
+.button{
+/*	background-color: red;*/
+	margin: 10px 0px;
+	display: flex;
+	justify-content: start;
+}
+
+.button>button
+{
+		background-color: #F21905;
+		width: auto;
+		height: auto;
+		padding: 5px 10px;
+		color: #DE952A;
+		font-size: 2vw;
+		border: solid 1px #DE952A;
+
+
+}
+
+.mapa {
+	width: 50%;
+	background-color:  #DE952A ;
+}
+
+.mapa>iframe {
+	width: 100%;
+	background-color:  #DE952A ;
+}
+
+
+
+#informacion
+{
+	width: 100%;
+	height: auto;
+	background-color: #DE952A;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: 0px;
+	padding:2% 0% 2% 2%;
+}
+
+#informacion>h4
+
+{
+
+	width: 100%;
+	color: #fff;
+/*	background-color: blue;*/
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#informacion>h5
+
+{
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+#informacion>a
+
+{
+	color: #fff;
+	text-decoration: unset;
+	font-size: 1rem;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*X. MEDIAQUERIES*/
+@media screen and (max-width: 768px) {
+
+	/*	MEDIAQUERIES MBL INDEX.HTML*/
+
+	header {
+		flex-direction:column;
+		padding-top:10%;
+		padding-bottom: 10%;
+	}
+
+	nav {
+		.linksmenu a {
+			font-size: 2rem;
+			line-height:5rem;
+		}
+	}
+	#logotip img{
+		height: auto;
+		width: 100%;
+	}
+
+	#menu {
+		width: 100%;
+		display:flex;
+		/*justify-content: start;*/
+		flex-wrap: wrap;
+		margin-left: 2%;
+		padding-left: 0;
+		/*flex-direction: column;*/
+		/*background-color: red;*/
+	}
+
+	#entradas
+{
+	
+width: 75%;
+height: 30%;
+}
+
+
+
+#boton
+{
+	padding: 10px 10px;
+	display: flex;
+	justify-content: flex-start;
+	
+}
+#boton>img
+{
+	width: 20%;
+	height: auto;
+	margin-left:10px ;
+/*	justify-content: flex-start;*/
+	/*background-color: red;*/
+}
+
+#boton>span
+{
+	margin-left:10px ;
+
+}
+
+
+
+.contanimacion
+{
+		position: absolute;
+    width: 70%;
+    top: 250px;
+    left: 120px;
+    /*background-color: red;*/
+
+  }
+
+.contanimacion >img
+{
+		width: 100%;
+		padding: 0;
+
+}
+
+#hero{
+	position: relative;
+}
+
+#entradas >a
+{
+	padding: 0;
+	font-size: 2.3rem;
+}
+
+
+	#about {
+		flex-direction:column;
+		padding-top:15%;
+		padding-bottom:15%;
+	}
+
+  .sobreaquestfestival {
+    width: 	100%;
+    font-size: 6rem;
+    /*background-color: blueviolet;*/
+    padding-bottom: 10%;
+    } 
+
+  .benvingutsalfestival {
+    width: 	100%;
+    font-size: 2rem;
+    padding-top:2%;
+    }
+
+  .footer-caixa {
+    flex-direction:column;
+    padding-top:5%;
+    padding-bottom: 5%;
+    }
+
+  .footer-section {
+    width: 100%;
+    }
+
+  .footer-section p {
+    font-size: 1.8rem;
+    }
+
+h3
+{
+	font-size: 1.8rem;
+}
+  a {
+    font-size: 2rem;
+	}
+
+	a:hover {
+    font-size: 2rem;
+    text-decoration-line: underline;
+	}
+
+
+/*	MEDIAQUERIES MBL GRUPS.HTML*/
+	#grups {
+	flex-direction: column;
+	}
+
+	.grup {
+	width: 100%;
+	margin: 10% 0%;
+	}
+
+	label{
+		font-size: 2rem;
+	}
+
+.Titulo2
+{
+	font-size: 5rem;
+	text-align: start;
+}
+
+input{
+	height: 70px;
+}
+
+.button> button
+{
+	width: 70%;
+	font-size: 3rem;
+	margin-bottom: 20px;
+	margin: 10% 0%;
+}
+
+.Titulo3
+{
+	font-size: 4rem;
+}
+.contacte{
+	flex-direction: column;
+}
+.formulari{
+	width: 100%;
+}
+.mapa{
+	width: 100%;
+	height: 80%;
+	flex-direction: column;
+	margin: 10% 0%;
+}
+
+.grup>p
+{
+	font-size: 1.5rem;
+}
+
+
+
+.mapa >iframe{
+	width: 100%;
+	height: 500px;
+}
+
+#informacion{
+	width: 100%;
+	height: 100%;
+	padding: 10% 3%;
+}
+
+#informacion>h4{
+	font-size: 3rem;
+}
+
+#informacion>h5{
+	font-size: 1.5rem;
+}
+
+#informacion>p{
+	font-size: 1.5rem;
+}
+
+#informacion>a{
+	font-size: 1.5rem;
+}
+
+}
+
+
+/*	MEDIAQUERIES MBL CONTACT.HTML*/
+
+
